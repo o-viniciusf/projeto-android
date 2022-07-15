@@ -85,6 +85,7 @@ header{
 
 nav{
     background-color: var(--cor1);
+    min-width: 462px;
     color: #ffffff;
     text-decoration: none;
     padding: 10px;
@@ -128,7 +129,7 @@ main{
     background-color: #ffffff;
     margin: 0 auto 0 auto;
     max-width: 900px;
-    min-width: 400px;
+    min-width: 462px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
     border-radius: 0 0 10px 10px;
 }
@@ -163,12 +164,24 @@ main a:hover{
 }
 /*-------------------------------------------------------------------------*/
 
-iframe{
-    padding: 30px 60px 30px 60px;
-    background-color: #195734;
+div.video{
+    background-color: var(--cor1);
+    padding: 10px;
+    padding-bottom: 55%;
+    position: relative;
+
 }
 
-/*-------------------------------------------------------------------------*/
+div.video>iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+*-------------------------------------------------------------------------*/
 
 aside{
     background-color: #c6ecd6;
